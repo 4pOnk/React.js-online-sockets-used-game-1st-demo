@@ -1,0 +1,43 @@
+@font-face {
+    font-family: "Montserrat-Regular";
+    src: url("view/fonts/Montserrat-Regular.ttf");
+}
+@font-face {
+    font-family: "Montserrat-SemiBold";
+    src: url("view/fonts/Montserrat-SemiBold.ttf");
+}
+@font-face {
+    font-family: "Montserrat-Bold";
+    src: url("view/fonts/Montserrat-Bold.ttf");
+}
+
+:root{
+    --yellow: #F5CD79;
+    --orange: #F19066;
+    --black: #303952;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat-SemiBold, sans-serif;
+    color: #303952;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+}
+input, textarea{
+    outline: none;
+    border: none;
+    background-color: white;
+}

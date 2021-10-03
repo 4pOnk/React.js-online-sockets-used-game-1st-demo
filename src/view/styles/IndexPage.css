@@ -1,0 +1,136 @@
+#root {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.index {
+    max-width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.index .content {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 20%;
+    background-color: white;
+}
+
+.index .content h1 {
+    font-size: 100px;
+    font-family: Montserrat-Bold, 'sans-serif';
+}
+
+.index .content h3 {
+    font-size: 40px;
+    font-family: Montserrat-SemiBold, 'sans-serif';
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.joinFight {
+    background-color: var(--yellow);
+    text-align: center;
+    border-radius: 25px;
+    padding: 17px 0;
+    font-size: 30px;
+    color: white;
+    width: 400px;
+    margin-top: 80px;
+    font-family: Montserrat-SemiBold, 'sans-serif';
+}
+
+.createFight {
+    width: 400px;
+    text-align: center;
+    font-size: 27px;
+    margin-top: 20px;
+}
+
+.round1{
+    padding: 20% ;
+    min-width: 300px;
+    min-height: 300px;
+    position: absolute;
+    transform: translate(-40%, -40%);
+    background-color: var(--orange);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.round2 {
+    padding: 500px;
+    position: absolute;
+    transform: translate(-60%, -60%);
+    background-color: var(--orange);
+    border-radius: 50%;
+    z-index: -1;
+    top: 100%;
+    left: 100%;
+}
+
+.StartGirl {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 35%;
+    min-width: 600px;
+    right: 5%;
+    z-index: -1;
+}
+
+@media (max-width: 1370px) {
+    .StartGirl {
+        top: 100%;
+        left: 100%;
+        transform: translate(-70%, -80%);
+    }
+
+    .round2 {
+        display: none;
+    }
+
+    .joinFight {
+        background-color: var(--orange);
+    }
+}
+
+@media (max-width: 850px) {
+    .StartGirl {
+        transform: translate(-60%, -50%);
+    }
+
+    body .index .content {
+        margin-left: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .index .content * {
+        text-align: center;
+    }
+
+    .index .content h1 {
+        font-size: 60px;
+    }
+
+    .index .content h3 {
+        font-size: 30px;
+    }
+
+    .joinFight {
+        width: 300px;
+        margin: 70px auto 0 auto;
+    }
+    .createFight{
+        background-color: white;
+    }
+    .index .content{
+        background-color: white;
+        padding-bottom: 20px;
+    }
+}

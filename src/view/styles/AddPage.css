@@ -1,0 +1,16 @@
+.line{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.line > *{
+    width: 45%;
+    border: 2px solid;
+    margin-top: 20px;
+    padding: 7px;
+    text-align: center;
+}
+.line input[type="radio"]{
+    display: inline;
+    margin-left: 10px;
+}

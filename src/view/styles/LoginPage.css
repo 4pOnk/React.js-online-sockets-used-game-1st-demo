@@ -1,0 +1,57 @@
+.logo {
+    width: 60px;
+}
+
+.index .content h1 {
+    font-size: 60px;
+    max-width: 650px;
+}
+
+.index .content {
+    margin-left: 10%;
+}
+
+.index .content input[type=text], .index .content input[type=email] {
+    width: 500px;
+    padding: 15px 0 15px 60px;
+    background-color: rgba(48, 57, 82, 0.04);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    font-size: 20px;
+    font-family: Montserrat-Regular, 'sans-serif';
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 20px;
+    margin-top: 40px;
+}
+
+.joinFight {
+    width: 300px;
+    background-color: var(--orange);
+    cursor: pointer;
+}
+
+.email {
+    background-image: url("../images/UserIcon.png");
+}
+
+.password {
+    background-image: url("../images/KeyIcon.png");
+}
+
+
+@media (max-width: 850px) {
+    .index .content{
+        width: 100%;
+    }
+    .index .content h1 {
+        font-size: 50px;
+        max-width: 100%;
+    }
+
+    .index .content input[type=text], .index .content input[type=email] {
+        max-width: 350px;
+        margin: 40px auto 0 auto;
+    }
+}

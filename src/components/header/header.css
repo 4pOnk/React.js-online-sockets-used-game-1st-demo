@@ -1,0 +1,83 @@
+header{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100px;
+    z-index: 2;
+    position: absolute;
+}
+header:before{
+    position: center;
+    content: '';
+    height: 100px;
+    display: block;
+}
+header ul{
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    margin-right: 27px;
+}
+header ul li{
+    font-family: Montserrat-Bold, 'sans-serif';
+    font-size: 20px;
+}
+header img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid var(--orange);
+}
+.HeaderLogined{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.displayHidden{
+    width: 35px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.displayHidden > *{
+    width: 100%;
+    min-height: 5px;
+    background-color: var(--black);
+}
+.hidden{
+    position: absolute;
+    right: 20px;
+    width: 250px;
+    border: 2px solid var(--black);
+    background-color: white;
+    top: 90px;
+}
+.hidden ul{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.hidden ul li{
+    padding: 7px 40px;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 10px;
+}
+.profile{
+    background-image: url("../../view/images/UserIcon.png");
+}
+.settings{
+    background-image: url("../../view/images/UserSettings.png");
+}
+.help{
+    background-image: url("../../view/images/UserQuestion.png");
+}
+.logout{
+    background-image: url("../../view/images/UserLogout.png");
+}
